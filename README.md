@@ -56,4 +56,4 @@ APP_SECRET_KEY=your_random_flask_secret_key
 python flask_app.py
 ```
 
-
+**Access the app at http://127.0.0.1:5000**
