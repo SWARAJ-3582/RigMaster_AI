@@ -1,5 +1,7 @@
 # 🖥️ RigMaster AI - Hardware Telemetry & Diagnostics
 
+**🟢 Live Demo:** [Click Here to Test RigMaster AI](https://swrj.pythonanywhere.com/)
+
 ## 🚀 Overview
 
 RigMaster AI is an intelligent hardware diagnostic tool designed to prevent system bottlenecking, thermal throttling, and hardware incompatibilities. By leveraging a custom WSGI-routed Flask backend and the Google Gemini AI Engine, it processes user hardware telemetry (CPU, GPU, RAM, Cooling, PSU) and provides real-time, actionable diagnostics in multiple languages.
