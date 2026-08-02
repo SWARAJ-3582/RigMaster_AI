@@ -9,13 +9,13 @@ import csv
 import io
 import uuid
 
-# Ye function teri .env file ko dhundhega aur uske variables ko system memory mein daal dega
-#load_dotenv(), per ye sirf locally run krega server per nhi, server per run krane ke liye ye rha code
-# SERVER KO EXACT PATH BATANA PADEGA:
+# This function will look for my .env file and load its variables into the system's memory.
+# However, this will only work when running the application locally, not on the server. To make it work on the server, use the following code:
+# YOU HAVE TO TELL THE EXACT PATH TO THE SERVER:
 project_folder = '/home/SWRJ/mysite'
 load_dotenv(os.path.join(project_folder, '.env'))
 app = Flask(__name__)
-# Ab hum hardcoded string ki jagah memory (environment) se value uthayenge
+# Now, rather than hardcoding the string, we'll fetch the value from the environment variables.
 app.secret_key = os.getenv("APP_SECRET_KEY")
 API_KEY = os.getenv("GEMINI_API_KEY")
 app.permanent_session_lifetime = timedelta(days=365)
